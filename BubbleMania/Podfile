@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.2'
+
+target 'BubbleMania' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for BubbleMania
+  pod 'PhysicsEngine', :git => "https://bitbucket.org/cs3217/2017-ps5-a0135766w.git", :branch => "cocoapod", :tag => "1"
+  target 'BubbleManiaTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

@@ -1,0 +1,24 @@
+PODS:
+  - PhysicsEngine (1)
+
+DEPENDENCIES:
+  - PhysicsEngine (from `https://bitbucket.org/cs3217/2017-ps5-a0135766w.git`, branch `cocoapod`, tag `1`)
+
+EXTERNAL SOURCES:
+  PhysicsEngine:
+    :branch: cocoapod
+    :git: https://bitbucket.org/cs3217/2017-ps5-a0135766w.git
+    :tag: '1'
+
+CHECKOUT OPTIONS:
+  PhysicsEngine:
+    :commit: 7b0fac3557b38823af80fcfba177b23cc50369cd
+    :git: https://bitbucket.org/cs3217/2017-ps5-a0135766w.git
+    :tag: '1'
+
+SPEC CHECKSUMS:
+  PhysicsEngine: d14acc3318437c049994bfb58efeaa22d347eb9f
+
+PODFILE CHECKSUM: 04ff335843319a652e2cc8e47396c0d54992c61d
+
+COCOAPODS: 1.1.1
