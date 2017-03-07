@@ -5,9 +5,9 @@
     "riwu": "riwu0730@gmail.com"
   },
   "version": "1",
-  "homepage": "https://bitbucket.org/cs3217/2017-ps5-a0135766w",
+  "homepage": "https://github.com/riwu/BubbleMania",
   "source": {
-    "git": "https://bitbucket.org/cs3217/2017-ps5-a0135766w.git",
+    "git": "https://github.com/riwu/BubbleMania.git",
     "branch": "cocoapod",
     "tag": "1"
   },

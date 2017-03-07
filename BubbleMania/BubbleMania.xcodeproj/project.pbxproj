@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		420E7ACC1E4F406E00234ADE /* ProjectileBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E7ACB1E4F406E00234ADE /* ProjectileBubble.swift */; };
-		420E7AD31E4F44A000234ADE /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E7AD21E4F44A000234ADE /* GameEngine.swift */; };
-		420E7AD51E4F44BB00234ADE /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E7AD41E4F44BB00234ADE /* Renderer.swift */; };
-		420E7AD71E4F4AF700234ADE /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E7AD61E4F4AF700234ADE /* GridView.swift */; };
-		420E7AD91E4F61CC00234ADE /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420E7AD81E4F61CC00234ADE /* PlayViewController.swift */; };
-		421EB0D21E474FA5004F1761 /* GridBubbles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421EB0D11E474FA5004F1761 /* GridBubbles.swift */; };
-		428D85B71E589EC6004D492F /* ControlPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428D85B51E589EC6004D492F /* ControlPanelViewController.swift */; };
-		428D85B81E589EC6004D492F /* DesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428D85B61E589EC6004D492F /* DesignViewController.swift */; };
-		428D85BB1E59C5AF004D492F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428D85BA1E59C5AF004D492F /* Constants.swift */; };
+		4215DC621E6EBA36003C1407 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215DC611E6EBA36003C1407 /* Constants.swift */; };
+		4215DC661E6EBA5B003C1407 /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215DC631E6EBA5B003C1407 /* FileHandler.swift */; };
+		4215DC671E6EBA5B003C1407 /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215DC641E6EBA5B003C1407 /* GameEngine.swift */; };
+		4215DC681E6EBA5B003C1407 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215DC651E6EBA5B003C1407 /* Renderer.swift */; };
+		4215DC6F1E6EBA73003C1407 /* ControlPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215DC6B1E6EBA73003C1407 /* ControlPanelViewController.swift */; };
+		4215DC701E6EBA73003C1407 /* DesignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215DC6C1E6EBA73003C1407 /* DesignViewController.swift */; };
+		4215DC711E6EBA73003C1407 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215DC6D1E6EBA73003C1407 /* PlayViewController.swift */; };
+		4215DC721E6EBA73003C1407 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215DC6E1E6EBA73003C1407 /* SelectionViewController.swift */; };
+		4215DC761E6EBA7D003C1407 /* BubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215DC731E6EBA7D003C1407 /* BubbleCell.swift */; };
+		4215DC771E6EBA7D003C1407 /* BubbleViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215DC741E6EBA7D003C1407 /* BubbleViewFlowLayout.swift */; };
+		4215DC781E6EBA7D003C1407 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215DC751E6EBA7D003C1407 /* GridView.swift */; };
+		4215DC7E1E6EBA86003C1407 /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215DC791E6EBA86003C1407 /* Bubble.swift */; };
+		4215DC7F1E6EBA86003C1407 /* BubbleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215DC7A1E6EBA86003C1407 /* BubbleType.swift */; };
+		4215DC801E6EBA86003C1407 /* GridBubbles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215DC7B1E6EBA86003C1407 /* GridBubbles.swift */; };
+		4215DC811E6EBA86003C1407 /* NormalBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215DC7C1E6EBA86003C1407 /* NormalBubble.swift */; };
+		4215DC821E6EBA86003C1407 /* ProjectileBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4215DC7D1E6EBA86003C1407 /* ProjectileBubble.swift */; };
 		42B94D8E1E3F9FE400F128FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B94D8D1E3F9FE400F128FA /* AppDelegate.swift */; };
 		42B94D931E3F9FE400F128FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B94D911E3F9FE400F128FA /* Main.storyboard */; };
 		42B94DA31E3F9FE400F128FA /* BubbleTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B94DA21E3F9FE400F128FA /* BubbleTypeTests.swift */; };
 		42C1F7AA1E63232300A15798 /* Levels in Resources */ = {isa = PBXBuildFile; fileRef = 42C1F7A91E63232300A15798 /* Levels */; };
-		42C1F7AE1E64585C00A15798 /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C1F7AD1E64585C00A15798 /* FileHandler.swift */; };
-		42D3B5461E607AC800EA671A /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3B5451E607AC800EA671A /* SelectionViewController.swift */; };
 		42F23F091E5227360088E4C0 /* BubbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F23F081E5227360088E4C0 /* BubbleTests.swift */; };
 		42F23F0B1E52274D0088E4C0 /* NormalBubbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F23F0A1E52274D0088E4C0 /* NormalBubbleTests.swift */; };
 		42F23F0D1E5227690088E4C0 /* GridBubblesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F23F0C1E5227690088E4C0 /* GridBubblesTests.swift */; };
 		42F23F0F1E52288D0088E4C0 /* ProjectileBubbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F23F0E1E52288D0088E4C0 /* ProjectileBubbleTests.swift */; };
 		42F23F201E5236890088E4C0 /* PhysicsEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F23F141E522E080088E4C0 /* PhysicsEngineTests.swift */; };
-		42F7447D1E45F23D00325C21 /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F7447B1E45F23D00325C21 /* Bubble.swift */; };
-		42F7447E1E45F23D00325C21 /* BubbleViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F7447C1E45F23D00325C21 /* BubbleViewFlowLayout.swift */; };
-		42F744861E45F8F500325C21 /* BubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F744811E45F8F500325C21 /* BubbleCell.swift */; };
-		42F744871E45F8F500325C21 /* NormalBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F744821E45F8F500325C21 /* NormalBubble.swift */; };
-		42F744951E4719E100325C21 /* BubbleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F744941E4719E100325C21 /* BubbleType.swift */; };
 		42F7449B1E4737C100325C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42F7449A1E4737C100325C21 /* Assets.xcassets */; };
 		74BB28573073AE4511261678 /* Pods_BubbleManiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F36E1A653DBBD9D5A968A1 /* Pods_BubbleManiaTests.framework */; };
 		BAB517720411A3468AFB4919 /* Pods_BubbleMania.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506EE3585D1F574D1FB068A2 /* Pods_BubbleMania.framework */; };
@@ -50,34 +50,34 @@
 /* Begin PBXFileReference section */
 		25C29BB724FE6C349F24B564 /* Pods-BubbleManiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BubbleManiaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BubbleManiaTests/Pods-BubbleManiaTests.release.xcconfig"; sourceTree = "<group>"; };
 		3A57B2384DB7746078B0DBFB /* Pods-BubbleMania.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BubbleMania.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BubbleMania/Pods-BubbleMania.debug.xcconfig"; sourceTree = "<group>"; };
-		420E7ACB1E4F406E00234ADE /* ProjectileBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectileBubble.swift; sourceTree = "<group>"; };
-		420E7AD21E4F44A000234ADE /* GameEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
-		420E7AD41E4F44BB00234ADE /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
-		420E7AD61E4F4AF700234ADE /* GridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
-		420E7AD81E4F61CC00234ADE /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
-		421EB0D11E474FA5004F1761 /* GridBubbles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridBubbles.swift; sourceTree = "<group>"; };
-		428D85B51E589EC6004D492F /* ControlPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlPanelViewController.swift; sourceTree = "<group>"; };
-		428D85B61E589EC6004D492F /* DesignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignViewController.swift; sourceTree = "<group>"; };
-		428D85BA1E59C5AF004D492F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4215DC611E6EBA36003C1407 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Misc/Constants.swift; sourceTree = "<group>"; };
+		4215DC631E6EBA5B003C1407 /* FileHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileHandler.swift; path = Misc/FileHandler.swift; sourceTree = "<group>"; };
+		4215DC641E6EBA5B003C1407 /* GameEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameEngine.swift; path = Misc/GameEngine.swift; sourceTree = "<group>"; };
+		4215DC651E6EBA5B003C1407 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Renderer.swift; path = Misc/Renderer.swift; sourceTree = "<group>"; };
+		4215DC6B1E6EBA73003C1407 /* ControlPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControlPanelViewController.swift; path = Controller/ControlPanelViewController.swift; sourceTree = "<group>"; };
+		4215DC6C1E6EBA73003C1407 /* DesignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesignViewController.swift; path = Controller/DesignViewController.swift; sourceTree = "<group>"; };
+		4215DC6D1E6EBA73003C1407 /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayViewController.swift; path = Controller/PlayViewController.swift; sourceTree = "<group>"; };
+		4215DC6E1E6EBA73003C1407 /* SelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectionViewController.swift; path = Controller/SelectionViewController.swift; sourceTree = "<group>"; };
+		4215DC731E6EBA7D003C1407 /* BubbleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BubbleCell.swift; path = View/BubbleCell.swift; sourceTree = "<group>"; };
+		4215DC741E6EBA7D003C1407 /* BubbleViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BubbleViewFlowLayout.swift; path = View/BubbleViewFlowLayout.swift; sourceTree = "<group>"; };
+		4215DC751E6EBA7D003C1407 /* GridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridView.swift; path = View/GridView.swift; sourceTree = "<group>"; };
+		4215DC791E6EBA86003C1407 /* Bubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bubble.swift; path = Model/Bubble.swift; sourceTree = "<group>"; };
+		4215DC7A1E6EBA86003C1407 /* BubbleType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BubbleType.swift; path = Model/BubbleType.swift; sourceTree = "<group>"; };
+		4215DC7B1E6EBA86003C1407 /* GridBubbles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridBubbles.swift; path = Model/GridBubbles.swift; sourceTree = "<group>"; };
+		4215DC7C1E6EBA86003C1407 /* NormalBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NormalBubble.swift; path = Model/NormalBubble.swift; sourceTree = "<group>"; };
+		4215DC7D1E6EBA86003C1407 /* ProjectileBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectileBubble.swift; path = Model/ProjectileBubble.swift; sourceTree = "<group>"; };
 		42B94D8B1E3F9FE400F128FA /* BubbleMania.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubbleMania.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B94D8D1E3F9FE400F128FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42B94D921E3F9FE400F128FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42B94D991E3F9FE400F128FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42B94DA21E3F9FE400F128FA /* BubbleTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BubbleTypeTests.swift; path = BubbleManiaTests/BubbleTypeTests.swift; sourceTree = "<group>"; };
 		42C1F7A91E63232300A15798 /* Levels */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Levels; sourceTree = "<group>"; };
-		42C1F7AD1E64585C00A15798 /* FileHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
 		42D3B5421E5DD04500EA671A /* BubbleManiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BubbleManiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		42D3B5451E607AC800EA671A /* SelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
 		42F23F081E5227360088E4C0 /* BubbleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BubbleTests.swift; path = BubbleManiaTests/BubbleTests.swift; sourceTree = "<group>"; };
 		42F23F0A1E52274D0088E4C0 /* NormalBubbleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NormalBubbleTests.swift; path = BubbleManiaTests/NormalBubbleTests.swift; sourceTree = "<group>"; };
 		42F23F0C1E5227690088E4C0 /* GridBubblesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridBubblesTests.swift; path = BubbleManiaTests/GridBubblesTests.swift; sourceTree = "<group>"; };
 		42F23F0E1E52288D0088E4C0 /* ProjectileBubbleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectileBubbleTests.swift; path = BubbleManiaTests/ProjectileBubbleTests.swift; sourceTree = "<group>"; };
 		42F23F141E522E080088E4C0 /* PhysicsEngineTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhysicsEngineTests.swift; path = BubbleManiaTests/PhysicsEngineTests.swift; sourceTree = "<group>"; };
-		42F7447B1E45F23D00325C21 /* Bubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
-		42F7447C1E45F23D00325C21 /* BubbleViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleViewFlowLayout.swift; sourceTree = "<group>"; };
-		42F744811E45F8F500325C21 /* BubbleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleCell.swift; sourceTree = "<group>"; };
-		42F744821E45F8F500325C21 /* NormalBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalBubble.swift; sourceTree = "<group>"; };
-		42F744941E4719E100325C21 /* BubbleType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleType.swift; sourceTree = "<group>"; };
 		42F7449A1E4737C100325C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		431A49B2734D2405D2FC281F /* Pods-BubbleMania.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BubbleMania.release.xcconfig"; path = "Pods/Target Support Files/Pods-BubbleMania/Pods-BubbleMania.release.xcconfig"; sourceTree = "<group>"; };
 		506EE3585D1F574D1FB068A2 /* Pods_BubbleMania.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BubbleMania.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,10 +108,10 @@
 		420E7ACF1E4F447100234ADE /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				420E7AD21E4F44A000234ADE /* GameEngine.swift */,
-				420E7AD41E4F44BB00234ADE /* Renderer.swift */,
-				428D85BA1E59C5AF004D492F /* Constants.swift */,
-				42C1F7AD1E64585C00A15798 /* FileHandler.swift */,
+				4215DC631E6EBA5B003C1407 /* FileHandler.swift */,
+				4215DC641E6EBA5B003C1407 /* GameEngine.swift */,
+				4215DC651E6EBA5B003C1407 /* Renderer.swift */,
+				4215DC611E6EBA36003C1407 /* Constants.swift */,
 			);
 			name = Misc;
 			sourceTree = "<group>";
@@ -155,11 +155,11 @@
 		42F7448D1E45FA3300325C21 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				42F744941E4719E100325C21 /* BubbleType.swift */,
-				42F7447B1E45F23D00325C21 /* Bubble.swift */,
-				42F744821E45F8F500325C21 /* NormalBubble.swift */,
-				420E7ACB1E4F406E00234ADE /* ProjectileBubble.swift */,
-				421EB0D11E474FA5004F1761 /* GridBubbles.swift */,
+				4215DC791E6EBA86003C1407 /* Bubble.swift */,
+				4215DC7A1E6EBA86003C1407 /* BubbleType.swift */,
+				4215DC7B1E6EBA86003C1407 /* GridBubbles.swift */,
+				4215DC7C1E6EBA86003C1407 /* NormalBubble.swift */,
+				4215DC7D1E6EBA86003C1407 /* ProjectileBubble.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -167,9 +167,9 @@
 		42F7448E1E45FA5C00325C21 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				42F744811E45F8F500325C21 /* BubbleCell.swift */,
-				42F7447C1E45F23D00325C21 /* BubbleViewFlowLayout.swift */,
-				420E7AD61E4F4AF700234ADE /* GridView.swift */,
+				4215DC731E6EBA7D003C1407 /* BubbleCell.swift */,
+				4215DC741E6EBA7D003C1407 /* BubbleViewFlowLayout.swift */,
+				4215DC751E6EBA7D003C1407 /* GridView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -177,10 +177,10 @@
 		42F7448F1E45FA6600325C21 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				428D85B51E589EC6004D492F /* ControlPanelViewController.swift */,
-				428D85B61E589EC6004D492F /* DesignViewController.swift */,
-				420E7AD81E4F61CC00234ADE /* PlayViewController.swift */,
-				42D3B5451E607AC800EA671A /* SelectionViewController.swift */,
+				4215DC6B1E6EBA73003C1407 /* ControlPanelViewController.swift */,
+				4215DC6C1E6EBA73003C1407 /* DesignViewController.swift */,
+				4215DC6D1E6EBA73003C1407 /* PlayViewController.swift */,
+				4215DC6E1E6EBA73003C1407 /* SelectionViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -422,23 +422,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				428D85BB1E59C5AF004D492F /* Constants.swift in Sources */,
-				420E7AD31E4F44A000234ADE /* GameEngine.swift in Sources */,
-				420E7AD51E4F44BB00234ADE /* Renderer.swift in Sources */,
-				421EB0D21E474FA5004F1761 /* GridBubbles.swift in Sources */,
+				4215DC711E6EBA73003C1407 /* PlayViewController.swift in Sources */,
+				4215DC7E1E6EBA86003C1407 /* Bubble.swift in Sources */,
+				4215DC811E6EBA86003C1407 /* NormalBubble.swift in Sources */,
+				4215DC661E6EBA5B003C1407 /* FileHandler.swift in Sources */,
 				42B94D8E1E3F9FE400F128FA /* AppDelegate.swift in Sources */,
-				420E7ACC1E4F406E00234ADE /* ProjectileBubble.swift in Sources */,
-				420E7AD91E4F61CC00234ADE /* PlayViewController.swift in Sources */,
-				42F744861E45F8F500325C21 /* BubbleCell.swift in Sources */,
-				42F744871E45F8F500325C21 /* NormalBubble.swift in Sources */,
-				42F744951E4719E100325C21 /* BubbleType.swift in Sources */,
-				428D85B71E589EC6004D492F /* ControlPanelViewController.swift in Sources */,
-				42C1F7AE1E64585C00A15798 /* FileHandler.swift in Sources */,
-				42D3B5461E607AC800EA671A /* SelectionViewController.swift in Sources */,
-				42F7447E1E45F23D00325C21 /* BubbleViewFlowLayout.swift in Sources */,
-				420E7AD71E4F4AF700234ADE /* GridView.swift in Sources */,
-				428D85B81E589EC6004D492F /* DesignViewController.swift in Sources */,
-				42F7447D1E45F23D00325C21 /* Bubble.swift in Sources */,
+				4215DC6F1E6EBA73003C1407 /* ControlPanelViewController.swift in Sources */,
+				4215DC721E6EBA73003C1407 /* SelectionViewController.swift in Sources */,
+				4215DC621E6EBA36003C1407 /* Constants.swift in Sources */,
+				4215DC681E6EBA5B003C1407 /* Renderer.swift in Sources */,
+				4215DC771E6EBA7D003C1407 /* BubbleViewFlowLayout.swift in Sources */,
+				4215DC761E6EBA7D003C1407 /* BubbleCell.swift in Sources */,
+				4215DC821E6EBA86003C1407 /* ProjectileBubble.swift in Sources */,
+				4215DC671E6EBA5B003C1407 /* GameEngine.swift in Sources */,
+				4215DC7F1E6EBA86003C1407 /* BubbleType.swift in Sources */,
+				4215DC781E6EBA7D003C1407 /* GridView.swift in Sources */,
+				4215DC801E6EBA86003C1407 /* GridBubbles.swift in Sources */,
+				4215DC701E6EBA73003C1407 /* DesignViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

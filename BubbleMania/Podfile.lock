@@ -2,23 +2,23 @@ PODS:
   - PhysicsEngine (1)
 
 DEPENDENCIES:
-  - PhysicsEngine (from `https://bitbucket.org/cs3217/2017-ps5-a0135766w.git`, branch `cocoapod`, tag `1`)
+  - PhysicsEngine (from `https://github.com/riwu/BubbleMania.git`, branch `cocoapod`, tag `1`)
 
 EXTERNAL SOURCES:
   PhysicsEngine:
     :branch: cocoapod
-    :git: https://bitbucket.org/cs3217/2017-ps5-a0135766w.git
+    :git: https://github.com/riwu/BubbleMania.git
     :tag: '1'
 
 CHECKOUT OPTIONS:
   PhysicsEngine:
-    :commit: 7b0fac3557b38823af80fcfba177b23cc50369cd
-    :git: https://bitbucket.org/cs3217/2017-ps5-a0135766w.git
+    :commit: 5982d513078b59fab0a76d03cd3bd39a70997f14
+    :git: https://github.com/riwu/BubbleMania.git
     :tag: '1'
 
 SPEC CHECKSUMS:
-  PhysicsEngine: d14acc3318437c049994bfb58efeaa22d347eb9f
+  PhysicsEngine: 644b5c6c95ef59ddeacbe5d6c9dcadc03d87cdad
 
-PODFILE CHECKSUM: 04ff335843319a652e2cc8e47396c0d54992c61d
+PODFILE CHECKSUM: f2d76cbcf960bf02a402aebb4145c1aeb217baea
 
 COCOAPODS: 1.1.1

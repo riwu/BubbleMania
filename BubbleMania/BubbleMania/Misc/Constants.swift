@@ -8,21 +8,21 @@
 
 import UIKit
 
-struct Constants {
+enum Constants {
 
-    struct Segue {
+    enum Segue {
         static let startGame = "startGame"
         static let embedControlPanelContainerView = "embedControlPanelContainerView"
     }
 
-    struct StoryBoardID {
+    enum StoryBoardID {
         static let PlayViewController = "PlayViewController"
         static let ControlPanelViewController = "ControlPanelViewController"
     }
 
-    struct Cannon {
+    enum Cannon {
         static let cannonIdleFile = "cannon-idle"
-        static let cannonAnimationFiles = ["cannon-shot-2", "cannon-shot-3", "cannon-shot-4"]
+        static let cannonAnimationFiles = ["cannon-shot-1", "cannon-shot-2", "cannon-shot-3"]
         static let animationDurationPerImage = 0.1
 
         static let ballHolderFile = "ball-holder"
@@ -36,7 +36,7 @@ struct Constants {
         static let numOfbubblesToBeLaunched = 4
     }
 
-    struct Grid {
+    enum Grid {
         static let numOfBubblesOnOddRow = 12
         static let numOfBubblesOnEvenRow = numOfBubblesOnOddRow - 1
         static let numOfBubblesOnOddAndEvenRow = numOfBubblesOnOddRow + numOfBubblesOnEvenRow
@@ -46,7 +46,7 @@ struct Constants {
         static let bubbleCellIdentifier = "bubbleCell"
     }
 
-    struct Bubble {
+    enum Bubble {
         static let burstDuration = 0.8
         static let burstSpriteFile = "bubble-burst"
         static let burstSpriteCount = 4
@@ -58,13 +58,13 @@ struct Constants {
         static let speed = CGFloat(15.0)
     }
 
-    struct Score {
+    enum Score {
         static let connectedNormalBubbles = 10
         static let specialBubbles = 20
         static let floatingBubbles = 30
     }
 
-    struct File {
+    enum File {
         static let fileExtension = "plist"
         static let levelFiles = ["1", "2", "3"]
         static let levelDirectory = "Levels"
