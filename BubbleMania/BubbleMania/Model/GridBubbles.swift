@@ -1,5 +1,5 @@
 //
-//  Bubbles.swift
+//  GridBubbles.swift
 //  BubbleMania
 //
 //  Created by riwu on 31/1/17.

@@ -114,6 +114,7 @@ class GameEngine {
                 bubblesToBeLaunched[i] = NormalBubble()
             }
             renderer.updateView(gridBubbles: gridBubbles, bubblesToBeLaunched: bubblesToBeLaunched)
+            removeFloatingBubbles()
             return false
         }
 
