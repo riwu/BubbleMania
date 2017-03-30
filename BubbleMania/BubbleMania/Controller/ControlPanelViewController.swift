@@ -47,7 +47,8 @@ extension ControlPanelViewController: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         guard let fileName = textField.text?.trimmingCharacters(in: .whitespaces) else {
-            assert(false, "No text field")
+            assertionFailure("No text field")
+            return false
         }
 
         if !fileName.isEmpty {
@@ -122,7 +123,7 @@ class ControlPanelViewController: UIViewController {
                                        .instantiateViewController(withIdentifier:
                                                                   Constants.StoryBoardID.PlayViewController)
                                                                                  as? PlayViewController else {
-            assert(false, "Failed to instantiate PlayViewController")
+            fatalError("Failed to instantiate PlayViewController")
         }
         playViewController.gridBubbles = gridBubbles
         (currentViewController ?? self).present(playViewController, animated: true, completion: nil)

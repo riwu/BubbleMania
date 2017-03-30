@@ -46,49 +46,49 @@ enum BubbleType: Int {
         switch self {
         case .blue:
             guard let bubbleImage = BubbleType.blueBubbleImage else {
-                assert(false, "Image file not present")
+                fatalError("Image file not present")
             }
             return bubbleImage
         case .green:
             guard let bubbleImage = BubbleType.greenBubbleImage else {
-                assert(false, "Image file not present")
+                fatalError("Image file not present")
             }
             return bubbleImage
         case .orange:
             guard let bubbleImage = BubbleType.orangeBubbleImage else {
-                assert(false, "Image file not present")
+                fatalError("Image file not present")
             }
             return bubbleImage
         case .red:
             guard let bubbleImage = BubbleType.redBubbleImage else {
-                assert(false, "Image file not present")
+                fatalError("Image file not present")
             }
             return bubbleImage
 
         case .indestructible:
             guard let bubbleImage = BubbleType.indestructibleBubbleImage else {
-                assert(false, "Image file not present")
+                fatalError("Image file not present")
             }
             return bubbleImage
         case .lightning:
             guard let bubbleImage = BubbleType.lightningBubbleImage else {
-                assert(false, "Image file not present")
+                fatalError("Image file not present")
             }
             return bubbleImage
         case .bomb:
             guard let bubbleImage = BubbleType.bombBubbleImage else {
-                assert(false, "Image file not present")
+                fatalError("Image file not present")
             }
             return bubbleImage
         case .star:
             guard let bubbleImage = BubbleType.starBubbleImage else {
-                assert(false, "Image file not present")
+                fatalError("Image file not present")
             }
             return bubbleImage
 
         case .empty:
             guard let bubbleImage = BubbleType.emptyBubbleImage else {
-                assert(false, "Image file not present")
+                fatalError("Image file not present")
             }
             return bubbleImage
         }

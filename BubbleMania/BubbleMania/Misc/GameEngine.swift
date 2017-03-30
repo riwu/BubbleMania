@@ -41,7 +41,7 @@ class GameEngine {
         guard let physicsEngine = PhysicsEngine(leftBound: view.frame.minX, rightBound: view.frame.maxX,
                                                 topBound: view.frame.minY,
                                                 bottomBound: view.frame.maxY) else {
-            assert(false, "Invalid bounds")
+            fatalError("Invalid bounds")
         }
         self.physicsEngine = physicsEngine
 
@@ -134,7 +134,7 @@ class GameEngine {
                                                                                        speed: Constants.Bubble.speed))
         projectileBubbles.append(newProjectileBubble)
 
-        let newLaunchBubble = NormalBubble() // NormalBubble(type: BubbleType.blue)!
+        let newLaunchBubble = NormalBubble()
         bubblesToBeLaunched.insert(newLaunchBubble, at: 0)
 
         renderer.updateView(newLaunchBubble: newLaunchBubble, hasAimed: hasAimed)
@@ -187,7 +187,7 @@ class GameEngine {
     private func hasIntersectGridBubble(projectileBubble: ProjectileBubble) -> Bool {
         for (index, _) in gridBubbles.bubbles {
             guard let bubbleCell = gridView.getCell(at: index) else {
-                assert(false, "Unable to get BubbleCell")
+                fatalError("Unable to get BubbleCell")
             }
             if physicsEngine.circlesIntersecting(center1: bubbleCell.center,
                                                  center2: projectileBubble.coordinate,
@@ -225,13 +225,13 @@ class GameEngine {
             closestBubbleCell = bubbleCell
         }
         guard let selectedBubbleCell = closestBubbleCell else {
-            assert(false, "Unable to get closest cell")
+            fatalError("Unable to get closest cell")
         }
         guard let index = gridView.collectionView.indexPath(for: selectedBubbleCell)?.row else {
-            assert(false, "Unable to get cell index")
+            fatalError("Unable to get cell index")
         }
         guard let newBubble = NormalBubble(type: collidedBubble.type) else {
-            assert(false, "failed to create normal bubble")
+            fatalError("failed to create normal bubble")
         }
         gridBubbles.add(at: index, bubble: newBubble)
 
@@ -301,7 +301,7 @@ class GameEngine {
 
     private func getBubblesOfSameType(_ index: Int) -> Set<Int> {
         guard let bubbleType = gridBubbles.get(at: index)?.type else {
-            assert(false, "Failed to get bubble type")
+            fatalError("Failed to get bubble type")
         }
 
         var result = Set<Int>()
@@ -319,7 +319,8 @@ class GameEngine {
         while let index = unprocessedBubbles.popFirst() {
             let indexes = getConnectedBubbles(at: index)
             guard let lowestIndex = indexes.min() else {
-                assert(false, "getConnectedBubbles did not return any bubble")
+                assertionFailure("getConnectedBubbles did not return any bubble")
+                return
             }
             if lowestIndex >= Constants.Grid.numOfBubblesOnOddRow {
                 floatingBubbles = floatingBubbles.union(indexes)
@@ -348,7 +349,7 @@ class GameEngine {
     private func getValidNeighbours(at index: Int, sameType: Bool,
                                     visitedSet: Set<Int>) -> Set<Int> {
         guard let bubbleType = gridBubbles.get(at: index)?.type else {
-            assert(false, "Unable to get bubble type")
+            fatalError("Unable to get bubble type")
         }
 
         var result = Set<Int>()

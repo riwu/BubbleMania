@@ -39,7 +39,7 @@ class GridView {
         guard let cell = collectionView.cellForItem(at: IndexPath(row: index,
                                                                   section: GridView.sectionNum))
                                                                              as? BubbleCell else {
-            assert(false, "Failed to retrieve bubble cell at " + String(index))
+            fatalError("Failed to retrieve bubble cell at " + String(index))
         }
         updateCell(cell, newBubble: newBubble, at: index)
     }

@@ -15,7 +15,7 @@ class SelectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let controlPanelViewController = storyboard?.instantiateViewController(withIdentifier: Constants.StoryBoardID.ControlPanelViewController) as? ControlPanelViewController else {
-            assert(false, "Failed to instantiate ControlPanelViewController")
+            fatalError("Failed to instantiate ControlPanelViewController")
         }
         self.controlPanelViewController = controlPanelViewController
     }
@@ -28,7 +28,8 @@ class SelectionViewController: UIViewController {
         guard let file = Bundle.main.url(forResource: Constants.File.levelFiles[button.tag - 1],
                                          withExtension: Constants.File.fileExtension,
                                          subdirectory: Constants.File.levelDirectory) else {
-            assert(false, "Failed to retrieve file")
+            assertionFailure("Failed to retrieve file")
+            return
         }
         controlPanelViewController?.loadBubblesAndPlay(file: file, currentViewController: self)
     }

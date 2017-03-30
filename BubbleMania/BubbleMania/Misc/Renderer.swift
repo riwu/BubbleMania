@@ -45,7 +45,7 @@ class Renderer {
             let xPos = view.frame.width / 2 / CGFloat(bubblesToBeLaunched.count) * CGFloat(i)
 
             guard let bubbleHolderImage = UIImage(named: Constants.Cannon.ballHolderFile) else {
-                assert(false, "Unable to find ball holder image: " + Constants.Cannon.ballHolderFile)
+                fatalError("Unable to find ball holder image: " + Constants.Cannon.ballHolderFile)
             }
 
             let bubbleHolderView = UIImageView(image: bubbleHolderImage)
@@ -65,7 +65,7 @@ class Renderer {
         }
 
         guard let lastBubbleImage = bubblesToBeLaunched.last?.image else {
-            assert(false, "Failed to get last bubble image")
+            fatalError("Failed to get last bubble image")
         }
         cannonBubbleView.image = lastBubbleImage
         newBubblesView.append(cannonBubbleView)
@@ -75,14 +75,14 @@ class Renderer {
 
         //cannon
         guard let cannonIdleImage = UIImage(named: Constants.Cannon.cannonIdleFile) else {
-            assert(false, "Failed to find cannon image: " + Constants.Cannon.cannonIdleFile)
+            fatalError("Failed to find cannon image: " + Constants.Cannon.cannonIdleFile)
         }
         self.cannonIdleImage = cannonIdleImage
 
         var animationImages = [UIImage]()
         for cannonAnimationFile in Constants.Cannon.cannonAnimationFiles {
             guard let cannonAnimationImage = UIImage(named: cannonAnimationFile) else {
-                assert(false, "Failed to find cannon image: " + cannonAnimationFile)
+                fatalError("Failed to find cannon image: " + cannonAnimationFile)
             }
             animationImages.append(cannonAnimationImage)
         }
@@ -91,14 +91,14 @@ class Renderer {
 
         //bubble burst images
         guard let burstSprites = UIImage(named: Constants.Bubble.burstSpriteFile)?.cgImage else {
-            assert(false, "Failed to find file " + Constants.Bubble.burstSpriteFile)
+            fatalError("Failed to find file " + Constants.Bubble.burstSpriteFile)
         }
         var burstImages = [UIImage]()
         let burstImageWidth = burstSprites.width / Constants.Bubble.burstSpriteCount
         for i in 0..<Constants.Bubble.burstSpriteCount {
             let rect = CGRect(x: burstImageWidth * i, y: 0, width: burstImageWidth, height: burstSprites.height)
             guard let bubbleAnimationImage = burstSprites.cropping(to: rect) else {
-                assert(false, "Failed to create crop image")
+                fatalError("Failed to create crop image")
             }
             burstImages.append(UIImage(cgImage: bubbleAnimationImage))
         }
@@ -126,10 +126,10 @@ class Renderer {
     func updateView(destroyedBubbleIndexes: Set<Int>) {
         for index in destroyedBubbleIndexes {
             guard let bubbleCell = gridView.getCell(at: index) else {
-                assert(false, "Cant get BubbleCell")
+                fatalError("Cant get BubbleCell")
             }
             guard let bubbleView = bubbleCell.contentView.subviews.first as? UIImageView else {
-                assert(false, "Cant get ImageView")
+                fatalError("Cant get ImageView")
             }
 
             bubbleView.removeFromSuperview()
@@ -153,10 +153,10 @@ class Renderer {
     func updateView(floatingBubbleIndexes: Set<Int>) {
         for index in floatingBubbleIndexes {
             guard let bubbleCell = gridView.getCell(at: index) else {
-                assert(false, "Cant get BubbleCell")
+                fatalError("Cant get BubbleCell")
             }
             guard let bubbleView = bubbleCell.contentView.subviews.first as? UIImageView else {
-                assert(false, "Cant get ImageView")
+                fatalError("Cant get ImageView")
             }
 
             bubbleView.removeFromSuperview()
@@ -216,7 +216,7 @@ class Renderer {
         cannonView.image = cannonAnimationImages.first
 
         guard let cannonBubbleView = bubblesToBeLaunchedViews.last else {
-            assert(false, "Cant get cannonBubbleView")
+            fatalError("Cant get cannonBubbleView")
         }
         let yOffset = cannonView.layer.position.y - cannonBubbleView.layer.position.y
         cannonBubbleView.transform = CGAffineTransform(translationX: 0, y: yOffset)

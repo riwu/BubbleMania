@@ -151,7 +151,7 @@ extension DesignViewController: UICollectionViewDataSource {
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.Grid.bubbleCellIdentifier,
                                                             for: indexPath) as? BubbleCell else {
-            assert(false, "failed to deque as BubbleCell")
+            fatalError("failed to deque as BubbleCell")
         }
         cell.addBackground()
         return cell
@@ -189,10 +189,12 @@ extension DesignViewController {
 
     fileprivate func getSelectedBubble() -> Bubble? {
         guard let buttonTag = currentBubbleButton?.tag else {
-            assert(false, "No button active")
+            assertionFailure("No button active")
+            return nil
         }
         guard let button = BubbleType(rawValue: buttonTag) else {
-            assert(false, "Invalid button")
+            assertionFailure("Invalid button")
+            return nil
         }
         if button == .empty {
             return nil

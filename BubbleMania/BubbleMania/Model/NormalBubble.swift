@@ -24,7 +24,7 @@ class NormalBubble: Bubble {
         let randBubbleTag = Int(arc4random_uniform(UInt32(NormalBubble.bubbleTypes.count))) +
             BubbleType.startTag
         guard let bubbleType = BubbleType(rawValue: randBubbleTag) else {
-            assert(false, "Invalid random number generated")
+            fatalError("Invalid random number generated")
         }
         assert(NormalBubble.bubbleTypes.contains(bubbleType), "Invalid normal bubble type")
         self.init(type: bubbleType)! // force-unwrap since guaranteed to be valid type
@@ -35,7 +35,8 @@ class NormalBubble: Bubble {
             BubbleType.startTag :
             type.rawValue + 1
         guard let newType = BubbleType(rawValue: newValue) else {
-            assert(false, "Cycled to invalid type")
+            assertionFailure("Cycled to invalid type")
+            return
         }
         type = newType
     }

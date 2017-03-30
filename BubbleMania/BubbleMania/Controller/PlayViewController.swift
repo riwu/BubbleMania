@@ -91,7 +91,7 @@ extension PlayViewController: UICollectionViewDataSource {
         guard let cell = collectionView
                          .dequeueReusableCell(withReuseIdentifier: Constants.Grid.bubbleCellIdentifier,
                                               for: indexPath) as? BubbleCell else {
-            assert(false, "failed to deque as BubbleCell")
+            fatalError("failed to deque as BubbleCell")
         }
         return cell
     }
