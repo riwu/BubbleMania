@@ -59,8 +59,8 @@ class GameEngine {
     }
 
     @objc
-    func updateState() {
-        if handlingGameOver() {
+    private func updateState() {
+        guard !handlingGameOver() else {
             return
         }
 
@@ -97,7 +97,7 @@ class GameEngine {
 
     private func handlingGameOver() -> Bool {
         if isShowingGameOver {
-            if !renderer.pressedRestart {
+            guard renderer.pressedRestart else {
                 return true
             }
 
@@ -169,7 +169,7 @@ class GameEngine {
     }
 
     private func checkForCollidedProjectiles() {
-        if projectileBubbles.count <= 1 {
+        guard projectileBubbles.count > 1 else {
             return
         }
 

@@ -280,6 +280,7 @@ class ControlPanelViewController: UIViewController {
             throw FileError.failToLoadFile(fileName: FileHandler.getFileName(file))
         }
 
+        gridBubbles.bubbles.removeAll()
         for (indexStr, bubbleTag) in bubbles {
             guard let index = Int(indexStr) else {
                 throw FileError.indexNotInt(indexStr: indexStr)

@@ -49,31 +49,31 @@ class PlayViewController: UIViewController {
 
     private func setupTapGesture() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapHandler))
-        view.addGestureRecognizer(tapGesture)
+        collectionView.addGestureRecognizer(tapGesture)
     }
 
     private func setupLongpressGesture() {
         let longpressGesture = UILongPressGestureRecognizer(target: self,
                                                             action: #selector(rotateCannon))
         longpressGesture.minimumPressDuration = 0.1
-        view.addGestureRecognizer(longpressGesture)
+        collectionView.addGestureRecognizer(longpressGesture)
     }
 
     private func setupPanGesture() {
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(rotateCannon))
         panGesture.maximumNumberOfTouches = 1
-        view.addGestureRecognizer(panGesture)
+        collectionView.addGestureRecognizer(panGesture)
     }
 
     @objc
     private func tapHandler(_ recognizer: UITapGestureRecognizer) {
-        let coordinate = recognizer.location(in: view)
+        let coordinate = recognizer.location(in: collectionView)
         gameEngine?.rotateCannon(to: coordinate, launch: true, hasAimed: false)
     }
 
     @objc
     private func rotateCannon(_ recognizer: UIGestureRecognizer) {
-        let coordinate = recognizer.location(in: view)
+        let coordinate = recognizer.location(in: collectionView)
         gameEngine?.rotateCannon(to: coordinate, launch: recognizer.state == .ended, hasAimed: true)
     }
 
